@@ -1,3 +1,9 @@
+import {fireInit} from './firebase.js'
+
+fireInit()
+var db= firebase.firestore();
+db.settings({timestampsInSnapshots:true})
+
 const lijst=document.getElementById('cafe-list')
 
 // create element en render in doc
